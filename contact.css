@@ -1,0 +1,399 @@
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#f4f6f8;
+}
+/* ===== NAVBAR ===== */
+/* ===== NAVBAR ===== */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:10px 50px;
+  background-color:#0d4b5c;
+}
+
+/* LOGO */
+.logo{
+  color:white;
+}
+
+/* MENU */
+.manu ul{
+  display:flex;
+  gap:20px;
+  font-size:20px;
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+ul li a{
+  text-decoration:none;
+  color:white;
+}
+
+ul li a:hover{
+  color:#1B3C53;
+}
+
+/* ===== CONTACT BUTTON (FIXED) ===== */
+.contact-btn{
+  background-color:#E3E3E3;
+  color:#456882;
+  border:none;
+  padding:10px 20px;
+  border-radius:5px;
+  cursor:pointer;
+  transition:0.3s;
+  font-weight:bold;
+}
+
+/* Hover */
+.contact-btn:hover{
+  background-color:#456882;
+  color:white;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 768px){
+
+  .navbar{
+    flex-direction:column;
+    text-align:center;
+    gap:15px;
+  }
+
+  .manu ul{
+    flex-direction:column;
+    gap:10px;
+  }
+
+  /* IMPORTANT FIX: keep SAME color on mobile */
+  .contact-btn{
+    background-color:#E3E3E3 !important;
+    color:#456882 !important;
+    padding:10px 20px;
+  }
+
+  .contact-btn:hover{
+    background-color:#456882 !important;
+    color:white !important;
+  }
+}
+
+/* ===== CONTACT BUTTON (FIXED) ===== */
+.contact-btn{
+  background-color:#E3E3E3;
+  color:#456882;
+  border:none;
+  padding:10px 20px;
+  border-radius:5px;
+  cursor:pointer;
+  transition:0.3s;
+  font-weight:bold;
+}
+
+/* Hover */
+.contact-btn:hover{
+  background-color:#456882;
+  color:white;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 768px){
+
+  .navbar{
+    flex-direction:column;
+    text-align:center;
+    gap:15px;
+  }
+
+  .manu ul{
+    flex-direction:column;
+    gap:10px;
+  }
+
+  /* IMPORTANT FIX: keep SAME color on mobile */
+  .contact-btn{
+    background-color:#E3E3E3 !important;
+    color:#456882 !important;
+    padding:10px 20px;
+  }
+
+  .contact-btn:hover{
+    background-color:#456882 !important;
+    color:white !important;
+  }
+}
+
+#hero {
+    position: relative;
+    width: 100%;
+    height: 90vh; 
+    background: url("img/Modernweb.png") center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+#hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); 
+}
+#hero .content {
+    position: relative;
+    max-width: 800px;
+    padding: 20px;
+    z-index: 1;
+}
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+/* ===== SECTION ===== */
+.contact-section{
+  padding:80px 20px;
+  display:flex;
+  justify-content:center;
+}
+
+/* ===== CONTAINER ===== */
+.contact-box{
+  max-width:1000px;
+  width:100%;
+  display:flex;
+  background:#fff;
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 15px 35px rgba(0,0,0,0.1);
+}
+
+/* ===== LEFT SIDE ===== */
+.contact-left{
+  width:40%;
+  background:#0d4b5c;
+  color:#fff;
+  padding:40px;
+}
+
+.contact-left h2{
+  margin-bottom:10px;
+}
+
+.contact-left p{
+  font-size:14px;
+  opacity:0.9;
+  margin-bottom:30px;
+}
+
+.info{
+  display:flex;
+  align-items:center;
+  margin-bottom:18px;
+  font-size:14px;
+}
+
+.info i{
+  margin-right:10px;
+  color:#ffcc70;
+}
+
+/* ===== RIGHT SIDE ===== */
+.contact-right{
+  width:60%;
+  padding:40px;
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+.contact-right input,
+.contact-right textarea{
+  padding:12px;
+  border:1px solid #ddd;
+  border-radius:8px;
+  outline:none;
+}
+
+.contact-right textarea{
+  height:120px;
+  resize:none;
+}
+
+/* BUTTON */
+.contact-right button{
+  width:180px;
+  padding:12px;
+  border:none;
+  border-radius:30px;
+  background:#2b7a8b;
+  color:white;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.contact-right button:hover{
+  background:#145c6b;
+}
+/* =========================
+   📱 TABLET RESPONSIVE
+========================= */
+@media (max-width: 992px) {
+
+  .contact-box{
+    flex-direction: column;
+  }
+
+  .contact-left,
+  .contact-right{
+    width: 100%;
+  }
+
+  .contact-left{
+    text-align: center;
+  }
+
+  .info{
+    justify-content: center;
+  }
+
+}
+
+/* =========================
+   📱 MOBILE RESPONSIVE
+========================= */
+@media (max-width: 576px) {
+
+  .contact-section{
+    padding: 40px 15px;
+  }
+
+  .contact-left,
+  .contact-right{
+    padding: 25px;
+  }
+
+  .contact-left h2{
+    font-size: 22px;
+  }
+
+  .contact-left p{
+    font-size: 13px;
+  }
+
+  .contact-right input,
+  .contact-right textarea{
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .contact-right button{
+    width: 100%;
+  }
+
+}
+
+.footer{
+    background-color:#0d4b5c;
+    margin-bottom: 20px;
+    padding: 30px;
+  }
+.footer_container{
+  max-width: 1170px;
+margin:auto ;
+}
+.footer-box p{
+  color: white;
+  max-width: 250px;
+  line-height: 1.2;
+}
+ul{
+  list-style: none;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-box{
+width: 25%;
+padding: 0 ;
+}
+.footer-box h2{
+  font-size: 18px;
+  color: white;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+.footer-box h3{
+  font-size: 18px;
+  color: white;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+.footer-box ul li a{
+  text-transform: capitalize;
+  font-size:16px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+display: block;
+margin: 10px;
+} 
+.footer-box ul li a:hover{
+  color: white;
+  padding-left: 10px;
+}
+.footer-box .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(225, 225, 225, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 20px;
+  color: #ffffff;
+}
+.footer-box .social-links a:hover{
+  background-color: #1B3C53;
+  transition: background-color 0.5;
+  color: #ffffff;
+}
+/* Tablet View */
+@media (max-width: 992px){
+  .footer-box{
+    width: 50%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Mobile View */@media (max-width: 576px){
+  .row{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-box{
+    width: 100%;
+  }
+
+  .footer-box p{
+    max-width: 100%;
+  }
+
+  .footer-box ul li a{
+    margin: 5px 0;
+  }
+
+  .footer-box .social-links a{
+    margin: 5px;
+  }
+}
